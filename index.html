@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 2 - Dnc!</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">The Dev News</h1>
+        <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav aria-label="Menu principal">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <nav id="sidebar-nav" class="sidebar-nav" aria-label="Menu lateral">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <img id="img1" src="assets/img1.svg" alt="">
+            <img id="img2" src="assets/img2.svg" alt="">
+        </section>
+
+        <section class="container1">
+            <div class="container2">
+                <h2 id="post1">Posts mais recentes</h2>
+                <h4 id="post2"><a id="vertodos" href="#">Ver todos</a></h4>
+            </div>
+            <div>
+                <img src="assets/img3.svg" alt="">
+            </div>
+        </section>
+
+        <section class="cards-container">
+            <div>
+                <img class="cards" src="assets/card1.svg" alt="Card 1">
+            </div>
+            <div>
+                <img class="cards" src="assets/card2.svg" alt="Card 2">
+            </div>
+            <div>
+                <img class="cards" src="assets/card3.svg" alt="Card 3">
+            </div>
+            <div>
+                <img class="cards" src="assets/card4.svg" alt="Card 4">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3 id="rodape">Copyright@The Dev News</h3>
+    </footer>
+
+    <script>
+const menuToggle = document.getElementById('menu-toggle');
+const sidebarNav = document.getElementById('sidebar-nav');
+menuToggle.addEventListener('click', () => {
+    sidebarNav.classList.toggle('open');
+});
+    </script>
+</body>
+</html>
